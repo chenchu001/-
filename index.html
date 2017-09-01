@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    </head>
+    <body>
+        <!--轮播图基本机构-->
+        <div class="banner">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="static/images/case1.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="static/images/case2.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="static/images/case3.jpg" />
+                    </a>
+                </li>
+            </ul>
+            <!--切换按钮-->
+            <div class="prevBtn btn"><</div>
+            <div class="nextBtn btn">></div>
+            <!--下面的小点-->
+            <ol>
+            </ol>
+        </div>
+    </body>
+    <script type="text/javascript" src="static/js/jQuery.js"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
+    <script type="text/javascript">
+        $('.banner').silde({
+            autoplay:true, //是否开启自动轮播
+            stopTime:3000,   //图片的展示时间
+            hover:true, //鼠标划入是否停止轮播
+        });
+    </script>
+</html>
